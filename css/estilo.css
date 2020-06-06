@@ -1,0 +1,387 @@
+/***********************************************************************************/
+/**************** INÍCIO DOS ELEMENTOS COMUNS PARA TODAS AS PÁGINAS ****************/
+/***********************************************************************************/
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(243, 243, 243);   
+}
+
+a {
+    color: rgb(81, 185, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+/***** INÍCIO DO HEADER DA PÁGINA  ******/
+body>header{
+	width: 100%;
+    margin-bottom: 10px;
+    height: 100px;
+    background: rgb(51, 51, 51);
+}
+
+#logo {
+    float: left;
+}
+
+.wrap-header{
+    width: 960px;
+    padding-top: 5px;
+    margin: 0px auto;
+}
+
+/***** INÍCIO DOS ESTILOS DO MENU QUE FICAM NO TOPO DA PÁGINA ******/
+#menu {
+    height: 37px;
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    float: left;
+    padding: 6px 0px 0px 0px;    
+    height: 85px;
+    width: 100px;
+    text-align: center;    
+    transition: background-color 1s;
+}
+
+#menu ul li:hover {
+    background-color:  rgb(81, 185, 255);
+}
+
+#menu ul li:hover {
+    background-color:  rgb(81, 185, 255);
+}
+
+#menu ul li a {
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    display: block;
+    padding: 6px 0px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#menu a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/***** ESTILO PARA LIMPAR A FLUTUAÇÃO ******/
+.clear {
+    clear: both;
+}
+
+/***** PARTE CENTRAL DA PÁGINA  ******/
+.layoutCentro{
+    margin: 0 auto;
+    width: 960px;
+    background-color: white;    
+}
+
+.layoutCentro header{
+    border-bottom: 1px dashed rgb(51, 51, 51);
+}
+
+.layoutCentro header h4{
+    line-height: 0;
+    margin-top: 50px;
+}
+
+/***** PARTE DA LATERAL À ESQUERDA DA PARTE CENTRAL DA PÁGINA (ONDE FICAM OS FORMULÁRIOS E LINKS RÁPIDOS)  ******/
+.layoutCentro .lateral{
+    width: 30%;
+    float: left;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/***** INÍCIO DO FORMULÁRIO DE LOGIN ******/
+#acessoConta{
+    display: block;
+}
+
+input{
+    margin: 5px 0;
+}
+
+/***** INÍCIO DOS LINKS RÁPIDOS ******/ 
+.links {
+    padding-inline-start: 17px;
+}
+
+.links > li{
+    border-bottom: 1px solid rgb(225, 225, 225);
+    margin-top: 5px;
+}
+
+.links > li > a{
+    color: black;
+    text-decoration: none;
+}
+
+.links > li > a:hover{
+   color: red;
+}
+
+/***** PARTE RESTANTE DA PARTE CENTRAL DA PÁGINA (ONDE FICAM OS CONTEÚDOS PRINCIPAIS DAS PÁGINAS)  ******/
+.centro{
+    width: 70%;
+    float: left;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+a.button {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    line-height: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background: rgb(63, 63, 63);
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+#enviar{
+    
+}
+
+/* BLOCOS DE ARTICLES DA PÁGINA INDEX.HTML */
+.bloco {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0px;
+    border-bottom: 1px double rgb(0, 0, 0);
+    padding: 0px 10px;
+}
+
+/***********************************************************************************/
+/********************** INÍCIO DO RODAPÉ DE TODAS AS PÁGINAS ***********************/
+/***********************************************************************************/
+.row_footer {
+    width: 960px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: gray;
+}
+
+footer .heading {
+    padding: 5px;
+    border-bottom: 3px double #ffffff;
+}
+
+footer .heading h2 {
+    font-size: 22px;
+    font-weight: normal;
+    padding: 0 10px;
+}
+
+.box_footer {
+    float: left;
+    width: 33%;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    background: #000;
+    padding: 10px 0px;
+    color: #ffffff;
+}
+
+/***********************************************************************************/
+/********************** INÍCIO DA PÁGINA DE GUIA MÉDICO ****************************/
+/***********************************************************************************/
+.pesquisa article{
+    width: 100%;
+}
+
+label{
+    display: block;
+}
+
+.pesquisa input[type="text"],
+.pesquisa input[list],
+.pesquisa select {
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+.medico{
+    
+}
+
+.medico>img{
+    margin-left: 40px;
+    width: 30px;
+}
+
+.figMedico{
+    display: inline-block;    
+}
+
+.figMedico img{
+    box-shadow: 2px 2px 20px  gray;
+}
+
+.contato{
+    display: inline-block;
+}
+
+@media only screen and (min-width: 101px) and (max-width: 960px){
+	img {
+        max-width: 100%;
+        height: auto;
+    }    
+   
+    .wrap-header,
+	.row_footer,
+	.layoutCentro
+    {
+        width: 100%;
+    }
+	
+	#menu ul li a {         
+        display: inline-block;
+        padding: 6px 2px;
+    }
+    
+    #menu ul li {   
+        height: auto;
+        width: auto;
+        padding: 5px;
+    }
+	
+	.layoutCentro .lateral
+	{
+		float: none;
+	}    
+	
+	#linksRapidos{
+		display: none;
+	}
+	
+	.centro{
+		width: 100%;
+		float: left;
+	}
+	
+	.bloco{
+		width: 50%;
+	}
+	
+	.layoutCentro .lateral{
+		float: none;
+		width: 100%;
+	}
+	
+	.centro{
+		padding: 0px;
+	}
+	
+	.box_footer{
+		float: none;
+		width: 100%;
+	}
+	
+	body{
+		min-width: 320px;
+	}
+	
+	.lateral input{
+		display: inline;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }    
+   
+    .wrap-header,
+	.row_footer,
+	.layoutCentro
+    {
+        width: 100%;
+    }
+	
+	#menu ul li a {
+        font-size: 10px;        
+        display: inline-block;
+        padding: 6px 2px;
+    }
+    
+    #menu ul li {   
+        height: auto;
+        width: auto;
+        padding: 5px;
+    }
+	
+	.layoutCentro .lateral
+	{
+		float: none;
+	}    
+	
+	#linksRapidos{
+		display: none;
+	}
+	
+	.centro{
+		width: 100%;
+		float: none;
+	}
+	
+	.bloco{
+		width: auto;
+	}
+	
+	.layoutCentro .lateral{
+		float: none;
+		width: 100%;
+	}
+	
+	.centro{
+		padding: 0px;
+	}
+	
+	.box_footer{
+		float: none;
+		width: 100%;
+	}
+	
+	body{
+		min-width: 320px;
+	}
+	
+	
+    
+}
+
